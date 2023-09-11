@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/static/users/users.css">
+  <link rel="stylesheet" href="/static/global.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="titulo">
+      Usuários
+    </h2>
+    <ul class="lista">
+      {{ range . }}
+        <div class="usuario">
+          Nome: {{ .Username }}
+        </div>
+      {{ end }}
+    </ul>
+  </div>
+</body>
+</html>

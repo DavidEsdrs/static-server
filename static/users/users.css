@@ -1,0 +1,18 @@
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titulo {
+  margin-bottom: 10px;
+}
+
+.usuario {
+  padding: 5px;
+  background-color: cyan;
+  border-radius: 5px;
+  color: black;
+
+  width: 200px;
+}
