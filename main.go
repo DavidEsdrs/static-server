@@ -26,13 +26,15 @@ func main() {
 	http.Handle("/static/", http.StripPrefix("/static/", static))
 
 	// configura o handlers
-	http.HandleFunc("/", createHandler("index.html"))
-	http.HandleFunc("/usuarios", createHandler("users.html"))
-	http.HandleFunc("/contatos", createHandler("contacts.html"))
+	http.HandleFunc("/", createHandler("public/index.html"))
+	http.HandleFunc("/usuarios", createHandler("public/users.html"))
+	http.HandleFunc("/contatos", createHandler("public/contacts.html"))
 
 	// inicia o servidor
 	http.ListenAndServe(":3030", nil)
 }
+
+// 3_221_225_530
 
 type Handler func(http.ResponseWriter, *http.Request)
 
