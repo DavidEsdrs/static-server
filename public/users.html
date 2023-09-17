@@ -9,9 +9,14 @@
 </head>
 <body>
   <div class="container">
-    <h2 class="titulo">
-      Usuários
-    </h2>
+    <header class="header flex row">
+      <h2 class="titulo">
+        Usuários
+      </h2>
+      <button class="button add-user">
+        ADICIONAR USUÁRIO
+      </button>
+    </header>
     <ul class="lista">
       {{ range . }}
         <div class="usuario">
@@ -20,5 +25,7 @@
       {{ end }}
     </ul>
   </div>
+  <script src="/static/utils/utils.js"></script>
+  <script src="/static/users/users-page.js"></script>
 </body>
 </html>

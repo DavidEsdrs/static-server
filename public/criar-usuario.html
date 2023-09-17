@@ -4,12 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="/static/global.css">
+  <link rel="stylesheet" href="/static/users/create-user.css">
 </head>
 <body>
   <form action="/usuario/criacao" method="post">
     <label for="username">Nome de usuário:</label>
-    <input type="text" id="username" name="name">
+    <input class="input" type="text" id="username" name="name">
+    <button class="button criar-usuario" type="submit">
+      CRIAR
+    </button>
   </form>
+  <script src="/static/utils/utils.js"></script>
   <script src="/static/users/users.js"></script>
 </body>
 </html>

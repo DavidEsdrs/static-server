@@ -1,0 +1,14 @@
+.input {
+  height: 25px;
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.criar-usuario {
+  border-radius: 5px;
+  /* font-size: 1.2rem; */
+  width: 100px;
+  height: 25px;
+  border: 1px solid black;
+}
